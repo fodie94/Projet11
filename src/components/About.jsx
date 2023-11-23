@@ -15,22 +15,10 @@ const Collapsible = ({ title, content }) => {
 const About = () => {
   return (
     <div className="About">
-      <Collapsible
-        title="Flabilité"
-        content="Contenu sur la flabilité. La flabilité est la qualité d'être flable."
-      />
-      <Collapsible
-        title="Respect"
-        content="Contenu sur le respect. Le respect est la base de toute relation saine."
-      />
-      <Collapsible
-        title="Service"
-        content="Contenu sur le service. Nous nous engageons à fournir un service de qualité."
-      />
-      <Collapsible
-        title="Sécurité"
-        content="Contenu sur la sécurité. La sécurité de nos clients est notre priorité."
-      />
+      <Collapsible title="Flabilité" content="Contenu sur la flabilité." />
+      <Collapsible title="Respect" content="Contenu sur le respect." />
+      <Collapsible title="Service" content="Contenu sur le service." />
+      <Collapsible title="Sécurité" content="Contenu sur la sécurité." />
     </div>
   )
 }

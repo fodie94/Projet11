@@ -13,9 +13,7 @@ export default function Header() {
               className="navlink text-shadow"
               style={({ isActive }) => {
                 return {
-                  textDecorationColor: isActive
-                    ? 'var(--color-primary)'
-                    : 'transparent',
+                  textDecorationColor: isActive ? 'red' : 'transparent',
                 }
               }}
               to="/"
@@ -28,9 +26,7 @@ export default function Header() {
               className="navlink text-shadow"
               style={({ isActive }) => {
                 return {
-                  textDecorationColor: isActive
-                    ? 'var(--color-primary)'
-                    : 'transparent',
+                  textDecorationColor: isActive ? 'red' : 'transparent',
                 }
               }}
               to="/ErrorPage"

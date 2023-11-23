@@ -1,14 +1,10 @@
 /*HOME*/
 .banner {
-  --banner-height: 223px; /*13.9375rem*/
-  --banner-width: 100%;
-  --banner-border-radius: var(--border-radius-2);
-  height: var(--banner-height);
-  width: var(--banner-width);
+  height: 223px;
+  width: 100%;
   display: grid;
   place-items: center;
   position: relative;
-  border-radius: var(--banner-border-radius);
 }
 
 .banner > * {
@@ -17,28 +13,13 @@
 }
 
 .banner-image {
-  height: var(--banner-height);
+  height: 223px;
   width: 87%;
   object-fit: cover;
-  border-radius: var(--banner-border-radius);
   border-radius: 10px 10px 10px 10px;
 }
 
-.banner::after {
-  content: '';
-  position: absolute;
-  height: var(--banner-height);
-  width: var(--banner-width);
-  border-radius: var(--banner-border-radius);
-  background-color: var(--color-black);
-  mix-blend-mode: darken;
-  opacity: 0.3;
-}
-
 .banner-text {
-  font-size: var(--fs-banner);
-  color: var(--color-white);
-  text-shadow: var(--text-shadow);
   text-align: center;
   z-index: 2;
   padding-inline: 16px;
@@ -49,19 +30,4 @@
   letter-spacing: 0em;
   text-align: left;
   color: white;
-}
-
-@container main (width <= 768px) {
-  .banner {
-    --banner-border-radius: var(--border-radius-1);
-  }
-
-  .banner:has(.banner-text) {
-    --banner-height: 111px;
-  }
-
-  .banner-text {
-    justify-self: left;
-    text-align: left;
-  }
 }
