@@ -4,9 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
-.collapsible {
+.collapse {
   margin: 10px;
   padding: 10px;
   width: 70%;
@@ -17,7 +18,7 @@
   padding: 10px;
 }  */
 
-.collapsible button {
+.collapse button {
   background-color: #007bff;
   color: white;
   border: none;
@@ -26,6 +27,10 @@
   height: 52px;
   text-align: left;
   border-radius: 5px;
+}
+
+.About .LogementButton {
+  width: 73.4%;
 }
 
 /* .collapsible button:hover {
