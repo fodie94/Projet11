@@ -1,22 +1,18 @@
 /* Logement */
 
 .bannerLogement {
-  --banner-height: 415px; /* 13.9375rem */
-  --banner-width: 100%;
-  --banner-border-radius: var(--border-radius-2);
-  height: var(--banner-height);
-  width: var(--banner-width);
-  display: grid;
-  place-items: center;
-  position: relative;
-  border-radius: var(--banner-border-radius);
+  height: 415px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* position: relative; */
+  width: 87%;
+  margin-left: 7%;
 }
 
 .bannerLogement-image {
-  height: var(--banner-height);
-  width: 87%;
+  height: 415px;
+  width: 100%;
   object-fit: cover;
-  border-radius: var(--banner-border-radius);
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -120,4 +116,9 @@
   justify-content: space-between;
 }
 
-/* Logement */
+.LogementTagsRatings {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*test slide*/

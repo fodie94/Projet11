@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import CarouselPicture from './Carousel'
+import Rating from './Rating'
+import Collapse from './Collapse'
 import '../styles/Logement.css'
 import '../styles/Header.css'
-import { FaChevronUp, FaChevronDown } from 'react-icons/fa' // Importez les icônes nécessaires
 
 export default function Logement({
   title,
@@ -17,23 +19,11 @@ export default function Logement({
   tags,
   name,
 }) {
-  const LogementButton = ({ title, content }) => {
-    const [isOpen, setIsOpen] = useState(false)
-
-    return (
-      <div className="LogementButton">
-        <button onClick={() => setIsOpen(!isOpen)}>
-          {title} {isOpen ? <FaChevronUp /> : <FaChevronDown />}
-        </button>
-        {isOpen && <div className="content">{content}</div>}
-      </div>
-    )
-  }
-
   return (
     <>
       <Header />
-      <section className="bannerLogement">
+      <CarouselPicture />
+      {/* <section className="bannerLogement">
         <img alt="" src={pictures[0]} className="bannerLogement-image" />
         <div className="LogementPictures">
           {pictures.slice(1).map((picture, index) => (
@@ -45,7 +35,8 @@ export default function Logement({
             />
           ))}
         </div>
-      </section>
+      </section> */}
+
       <div className="LogementInfo">
         <div className="LogementLocationName">
           <div className="LogementLocation">
@@ -57,12 +48,31 @@ export default function Logement({
             <img alt={host.name} src={host.picture} />
           </div>
         </div>
-        <div className="LogementTags">
-          {tags.slice(1).map((tag, index) => (
-            <p key={index}>{tag}</p>
-          ))}
+        <div className="LogementTagsRatings">
+          <div className="LogementTags">
+            {tags.slice(1).map((tag, index) => (
+              <p key={index}>{tag}</p>
+            ))}
+          </div>
+          <div className="rating">
+            <Rating rate={rating} />
+            {/* <p>{rating}</p>
+            {Array.isArray(rating) &&
+              rating.slice(1).map((star, index) => <p key={index}>{star}</p>)} */}
+          </div>
         </div>
         <div className="LogementDescriptionEquipement">
+          {/* Utilisation du composant Collapse pour la section Description */}
+          <Collapse title="Description" content={description} />
+          {/* Utilisation du composant Collapse pour la section Equipements */}
+          <Collapse
+            title="Equipements"
+            content={equipments.slice(1).map((equipment, index) => (
+              <p key={index}>{equipment}</p>
+            ))}
+          />
+        </div>
+        {/* <div className="LogementDescriptionEquipement">
           <LogementButton title="Description" content={description} />
           <LogementButton
             title="Equipements"
@@ -70,7 +80,7 @@ export default function Logement({
               <p key={index}>{equipment}</p>
             ))}
           />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>

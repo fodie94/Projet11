@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import LogementPage from './pages/LogementPage'
-// import AboutPage from './pages/AboutPage'
+import AboutPage from './pages/AboutPage'
 import ErrorPage from './pages/ErrorPage'
 
 const rootElement = document.getElementById('root')
@@ -16,8 +16,8 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/AboutPage" element={<AboutPage />} /> */}
-        <Route path="/ErrorPage" element={<ErrorPage />} />
+        <Route path="/AboutPage" element={<AboutPage />} />
+        <Route path="/*" element={<ErrorPage />} />
         <Route path="logement/:id" element={<LogementPage />} />
       </Routes>
     </Router>

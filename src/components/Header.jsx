@@ -29,7 +29,7 @@ export default function Header() {
                   textDecorationColor: isActive ? 'red' : 'transparent',
                 }
               }}
-              to="/ErrorPage"
+              to="/AboutPage"
             >
               A Propos
             </NavLink>
