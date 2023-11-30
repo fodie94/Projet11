@@ -21,11 +21,11 @@
 }
 
 .LogementInfo {
-  width: 87%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 7%;
 }
+
 .LogementLocationName {
   display: flex;
   justify-content: space-between;
@@ -44,8 +44,20 @@
   padding: 0;
 }
 
+.LogementLocation p {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: red;
+}
+
 .LogementName {
   display: flex;
+  gap: 10px;
+  margin-bottom: 37px;
 }
 
 .LogementName img {
@@ -97,7 +109,9 @@
 }
 
 .LogementButton .content {
-  padding: 10px;
+  padding: 10px 20px 20px 20px;
+  border-radius: 10px 10px 5px 5px;
+  background: #f6f6f6;
 }
 
 .LogementButton button {
@@ -121,4 +135,36 @@
   display: flex;
   justify-content: space-between;
 }
+
+.LogementMobile {
+  display: none;
+}
 /*test slide*/
+
+@media (max-width: 550px) {
+  .LogementMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .LogementInfo {
+    display: none;
+  }
+  .LogementRatingName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .LogementName {
+    margin: 0;
+  }
+  .LogementDescriptionEquipement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .LogementButton {
+    width: 100%;
+  }
+}

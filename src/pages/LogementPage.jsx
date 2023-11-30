@@ -3,6 +3,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import logements from '../data/logements.json'
 import Logement from '../components/Logement.jsx'
+// import '../styles/root.css'
 
 export default function LogementPage() {
   const { id } = useParams()

@@ -8,19 +8,23 @@
 }
 
 .gallery {
-  width: 87%;
   justify-content: center;
   display: flex;
   align-items: center;
-  padding-left: 6%;
+}
+
+.galleryGrid {
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 25px;
 }
 
 .card-gallery {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 30% 30%;
   justify-content: space-evenly;
-  gap: 3.75rem; /*60px*/
-  padding: 50px 36px 50px 54px;
+  gap: 50px;
+  padding: 50px;
 }
 
 .card-link {
@@ -79,4 +83,55 @@
   letter-spacing: 0em;
   text-align: left;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .galleryGrid {
+    background-color: transparent;
+  }
+  .card-gallery {
+    grid-template-columns: 40% 40%;
+    align-items: center; /* Optional: Center the items in the column */
+    gap: 30px;
+    padding: 0;
+    background-color: transparent;
+  }
+  .card-link {
+    height: 300px;
+    width: 100%;
+    transition: transform 0.3s;
+    text-decoration: none;
+  }
+  .card img {
+    height: 300px;
+  }
+  .card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .galleryGrid {
+    background-color: transparent;
+  }
+  .card-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Center the items in the column */
+    gap: 30px;
+    padding: 0;
+    background-color: transparent;
+  }
+  .card-link {
+    height: 255px;
+    width: 100%;
+    transition: transform 0.3s;
+    text-decoration: none;
+  }
+  .card img {
+    height: 255px;
+  }
+  .card {
+    height: 255px;
+  }
 }

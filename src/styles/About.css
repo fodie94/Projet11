@@ -36,3 +36,9 @@
 /* .collapsible button:hover {
   background-color: #0056b3;
 } */
+
+@media (max-width: 550px) {
+  .About .LogementButton {
+    width: 100%;
+  }
+}

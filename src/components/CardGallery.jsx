@@ -7,16 +7,18 @@ import '../styles/Card.css'
 export default function CardGallery() {
   return (
     <div className="gallery">
-      <section className="card-gallery">
-        {logements.map((logement) => (
-          <Card
-            key={logement.id}
-            id={logement.id}
-            title={logement.title}
-            src={logement.cover}
-          />
-        ))}
-      </section>
+      <div className="galleryGrid">
+        <section className="card-gallery">
+          {logements.map((logement) => (
+            <Card
+              key={logement.id}
+              id={logement.id}
+              title={logement.title}
+              src={logement.cover}
+            />
+          ))}
+        </section>
+      </div>
     </div>
   )
 }

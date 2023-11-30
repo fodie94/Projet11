@@ -3,8 +3,11 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 2.5rem;
-  width: 87%;
-  padding-left: 7%;
+}
+
+.header-primary img {
+  width: 145px;
+  height: 46.88px;
 }
 
 .header-primary ul {

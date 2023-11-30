@@ -36,7 +36,37 @@ export default function Logement({
           ))}
         </div>
       </section> */}
-
+      <div className="LogementMobile">
+        <div className="LogementLocation">
+          <h1>{title}</h1>
+          <p>{location}</p>
+        </div>
+        <div className="LogementTags">
+          {tags.slice(1).map((tag, index) => (
+            <p key={index}>{tag}</p>
+          ))}
+        </div>
+        <div className="LogementRatingName">
+          <div className="rating">
+            <Rating rate={rating} />
+          </div>
+          <div className="LogementName">
+            <p>{host.name}</p>
+            <img alt={host.name} src={host.picture} />
+          </div>
+        </div>
+        <div className="LogementDescriptionEquipement">
+          {/* Utilisation du composant Collapse pour la section Description */}
+          <Collapse title="Description" content={description} />
+          {/* Utilisation du composant Collapse pour la section Equipements */}
+          <Collapse
+            title="Equipements"
+            content={equipments.slice(1).map((equipment, index) => (
+              <p key={index}>{equipment}</p>
+            ))}
+          />
+        </div>
+      </div>{' '}
       <div className="LogementInfo">
         <div className="LogementLocationName">
           <div className="LogementLocation">
@@ -62,9 +92,7 @@ export default function Logement({
           </div>
         </div>
         <div className="LogementDescriptionEquipement">
-          {/* Utilisation du composant Collapse pour la section Description */}
           <Collapse title="Description" content={description} />
-          {/* Utilisation du composant Collapse pour la section Equipements */}
           <Collapse
             title="Equipements"
             content={equipments.slice(1).map((equipment, index) => (
@@ -72,15 +100,6 @@ export default function Logement({
             ))}
           />
         </div>
-        {/* <div className="LogementDescriptionEquipement">
-          <LogementButton title="Description" content={description} />
-          <LogementButton
-            title="Equipements"
-            content={equipments.slice(1).map((equipment, index) => (
-              <p key={index}>{equipment}</p>
-            ))}
-          />
-        </div> */}
       </div>
       <Footer />
     </>

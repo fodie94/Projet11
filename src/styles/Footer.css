@@ -5,6 +5,7 @@
   align-items: center;
   background-color: black;
   height: 209px;
+  gap: 20px;
 }
 
 .footer img {
@@ -16,4 +17,25 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  gap: 5px;
+}
+@media (max-width: 550px) {
+  .copyright {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 133.59px;
+    height: 46px;
+    top: 105px;
+    left: 121.09px;
+  }
 }
