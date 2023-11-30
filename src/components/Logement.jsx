@@ -18,6 +18,7 @@ export default function Logement({
   equipments,
   tags,
   name,
+  ...logement
 }) {
   return (
     <>

@@ -19,7 +19,25 @@
 
 .ButtonPictures {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  transform: translateY(-21px);
+  justify-content: space-between;
+  width: 96%;
+  transform: translateY(-236px);
+  padding: 0 15px;
+}
+.NombrePictures {
+  transform: translateY(-120px);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+.prev,
+.next {
+  width: 46.68px;
+  height: 79.2px;
+  background: transparent;
+  border: none;
 }
