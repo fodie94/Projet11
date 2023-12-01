@@ -1,34 +1,25 @@
 import React, { useState } from 'react'
-import logements from '../data/logements.json'
 import '../styles/Logement.css'
 import '../styles/Carousel.css'
 import previousIcon from '../assets/previous.svg'
 import nextIcon from '../assets/next.svg'
 
-export default function CarouselPicture() {
+export default function CarouselPicture({ pictures, title }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-  const logement = logements[currentImageIndex]
-  const NomberImages = currentImageIndex + 1
-  const totalImages = logements.length
-  console.log(totalImages)
-
   const handleNextImage = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % totalImages)
+    setCurrentImageIndex((currentImageIndex + 1) % pictures.length)
   }
 
   const handlePreviousImage = () => {
-    setCurrentImageIndex((currentImageIndex - 1 + totalImages) % totalImages)
+    setCurrentImageIndex(
+      (currentImageIndex - 1 + pictures.length) % pictures.length
+    )
   }
-
   return (
     <div className="BannerCarousel">
-      {/* <h1>{logement.title}</h1> */}
       <div className="BannerPictures">
-        <img
-          src={logement.pictures[0]}
-          alt={`${logement.title} - ${currentImageIndex + 1}`}
-        />
+        <img src={pictures[currentImageIndex]} alt={title} />
       </div>
       <div className="ButtonPictures">
         <button className="prev" onClick={handlePreviousImage}>
@@ -40,7 +31,7 @@ export default function CarouselPicture() {
       </div>
       <div className="NombrePictures">
         <p>
-          {NomberImages}/{totalImages}
+          {currentImageIndex + 1}/{pictures.length}
         </p>
       </div>
     </div>

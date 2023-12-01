@@ -18,12 +18,12 @@ export default function Logement({
   equipments,
   tags,
   name,
-  ...logement
+  logementIndex,
 }) {
   return (
     <>
       <Header />
-      <CarouselPicture />
+      <CarouselPicture pictures={pictures} />
       {/* <section className="bannerLogement">
         <img alt="" src={pictures[0]} className="bannerLogement-image" />
         <div className="LogementPictures">
