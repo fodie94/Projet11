@@ -10,7 +10,7 @@
 
 .header-primary img {
   width: 145px;
-  height: 46.88px;
+  height: 68px;
 }
 
 .header-primary ul {
@@ -24,6 +24,13 @@ li {
 }
 
 .navlink {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+  height: 34px;
   color: red;
 }
 
@@ -31,5 +38,18 @@ li {
   .header-primary {
     margin-bottom: 30px;
     padding: 0 25px;
+  }
+  .header-primary img {
+    width: 145px;
+    height: 46.88px;
+  }
+  .navlink {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: red;
   }
 }

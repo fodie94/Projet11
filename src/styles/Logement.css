@@ -125,6 +125,10 @@
   color: red;
 }
 
+.content p {
+  margin: 0;
+  padding: 0;
+}
 .LogementButton button {
   background-color: red;
   color: white;
