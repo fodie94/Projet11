@@ -11,6 +11,8 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  padding: 0 92px;
+  width: 87%;
 }
 
 .galleryGrid {
@@ -110,7 +112,10 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .gallery {
+    padding: 0 25px;
+  }
   .galleryGrid {
     background-color: transparent;
   }

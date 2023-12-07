@@ -1,10 +1,12 @@
 /*HOME*/
 .banner {
   height: 223px;
-  width: 100%;
+  width: 87%;
   display: grid;
   place-items: center;
   position: relative;
+  margin-bottom: 45px;
+  padding: 0 92px;
 }
 
 .banner > * {
@@ -32,7 +34,15 @@
   color: white;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
+  .banner {
+    height: 111px;
+    margin-bottom: 30px;
+    padding: 0 25px;
+  }
+  .banner-image {
+    height: 111px;
+  }
   .banner-text {
     font-family: Montserrat;
     font-size: 24px;

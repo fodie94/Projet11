@@ -1,10 +1,11 @@
 .About {
-  width: 100%;
+  width: 87%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 0 92px;
 }
 
 .collapse {
@@ -40,5 +41,8 @@
 @media (max-width: 550px) {
   .About .LogementButton {
     width: 100%;
+  }
+  .About {
+    padding: 0 25px;
   }
 }

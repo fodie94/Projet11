@@ -1,11 +1,14 @@
-#root {
+/* #root {
   padding: 0 92px;
   display: flex;
   flex-direction: column;
+}
+#root footer {
+  padding: 0;
 }
 
 @media (max-width: 768px) {
   #root {
     padding: 0 12px;
   }
-}
+} */

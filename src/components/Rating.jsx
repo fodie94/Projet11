@@ -8,12 +8,12 @@ export default function Rating({ rate }) {
 
   return (
     <div className="rate">
-      {fullStars.map((star, index) => {
+      {fullStars.map((index) => {
         return (
           <img key={index} alt="star" className="star" src={starFull}></img>
         )
       })}
-      {emptyStars.map((star, index) => {
+      {emptyStars.map((index) => {
         return (
           <img key={index} alt="star" className="star" src={starEmpty}></img>
         )

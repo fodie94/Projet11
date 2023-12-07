@@ -1,10 +1,17 @@
 .rate {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
 }
 
 .star {
-  height: var(--size-star);
-  width: var(--size-star);
+  height: 32px;
+  width: 32px;
+}
+
+@media (max-width: 550px) {
+  .star {
+    height: 18px;
+    width: 18px;
+  }
 }

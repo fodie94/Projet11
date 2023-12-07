@@ -3,7 +3,6 @@ import Banner from '../components/Banner.jsx'
 import bannerImage from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg'
 import CardGallery from '../components/CardGallery.jsx'
 import Footer from '../components/Footer.jsx'
-import '../styles/root.css'
 
 const bannerText = 'Chez vous, partout et ailleurs'
 

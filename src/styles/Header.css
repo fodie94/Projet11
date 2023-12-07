@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 2.5rem;
+  margin-bottom: 45px;
+  padding: 0 92px;
+  width: 87%;
 }
 
 .header-primary img {
@@ -22,4 +25,11 @@ li {
 
 .navlink {
   color: red;
+}
+
+@media (max-width: 550px) {
+  .header-primary {
+    margin-bottom: 30px;
+    padding: 0 25px;
+  }
 }
