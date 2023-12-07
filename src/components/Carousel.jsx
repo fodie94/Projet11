@@ -8,14 +8,21 @@ export default function CarouselPicture({ pictures, title }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const handleNextImage = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % pictures.length)
+    setCurrentImageIndex(currentImageIndex + 1)
+
+    if (currentImageIndex >= pictures.length - 1) {
+      setCurrentImageIndex(0)
+    }
   }
 
   const handlePreviousImage = () => {
-    setCurrentImageIndex(
-      (currentImageIndex - 1 + pictures.length) % pictures.length
-    )
+    setCurrentImageIndex(currentImageIndex - 1)
+
+    if (currentImageIndex <= 0) {
+      setCurrentImageIndex(pictures.length - 1)
+    }
   }
+
   return (
     <div className="BannerCarousel">
       <div className="BannerPictures">
