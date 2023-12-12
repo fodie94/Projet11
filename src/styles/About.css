@@ -34,15 +34,41 @@
   width: 73.4%;
 }
 
+.About .LogementButton button {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.About svg {
+  height: 13.7px;
+  width: 24px;
+}
+
 /* .collapsible button:hover {
   background-color: #0056b3;
 } */
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .About .LogementButton {
     width: 100%;
   }
   .About {
     padding: 0 25px;
+  }
+  .About .LogementButton button {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .About svg {
+    height: 9.14px;
+    width: 16px;
   }
 }

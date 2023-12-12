@@ -34,7 +34,7 @@ li {
   color: red;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .header-primary {
     margin-bottom: 30px;
     padding: 0 25px;

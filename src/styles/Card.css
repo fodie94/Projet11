@@ -87,13 +87,13 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .galleryGrid {
     background-color: transparent;
   }
   .card-gallery {
     grid-template-columns: 40% 40%;
-    align-items: center; /* Optional: Center the items in the column */
+    align-items: center; 
     gap: 30px;
     padding: 0;
     background-color: transparent;
@@ -110,9 +110,9 @@
   .card {
     height: 300px;
   }
-}
+} */
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .gallery {
     padding: 0 25px;
   }
