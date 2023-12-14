@@ -66,7 +66,7 @@ export default function Logement({
           </div>
           <div className="LogementTagsRatings">
             <div className="LogementTags">
-              {tags.slice(1).map((tag, index) => (
+              {tags.map((tag, index) => (
                 <p key={index}>{tag}</p>
               ))}
             </div>
@@ -78,7 +78,7 @@ export default function Logement({
             <Collapse title="Description" content={description} />
             <Collapse
               title="Equipements"
-              content={equipments.slice(1).map((equipment, index) => (
+              content={equipments.map((equipment, index) => (
                 <p key={index}>{equipment}</p>
               ))}
             />
